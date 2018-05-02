@@ -9,7 +9,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/lennart683/blukiiSK.git", :tag => s.version.to_s }
   s.ios.source_files =  'blukiiSK/blukiiSK.framework/Versions/A/Headers/*.h'
   s.osx.source_files = 'blukiiSK/blukiiSK_Mac.framework/Versions/A/Headers/*.h'
-  s.vendored_frameworks = "blukiiSK/blukiiSK.framework"
+  s.ios.vendored_frameworks = "blukiiSK/blukiiSK.framework"
+  s.osx.vendored_frameworks = "blukiiSK/blukiiSK_Mac.framework"
   s.ios.deployment_target = '10.0'
   s.osx.deployment_target = '10.13'
   s.frameworks = 'CoreBluetooth'
