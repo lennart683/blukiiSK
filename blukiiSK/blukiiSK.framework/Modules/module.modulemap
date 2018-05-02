@@ -1,0 +1,6 @@
+framework module blukiiSK {
+  umbrella header "blukiiSK.h"
+
+  export *
+  module * { export * }
+}
